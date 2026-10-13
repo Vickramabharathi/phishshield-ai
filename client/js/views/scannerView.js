@@ -200,18 +200,24 @@ function renderScanResult(data) {
         </div>
       </div>
 
-      <!-- Action Buttons Bar -->
-      <div style="display: flex; gap: 10px; flex-wrap: wrap; padding-top: 14px; border-top: 1px solid var(--border-subtle);">
+      <!-- Action Buttons Bar & Workflow Routing -->
+      <div style="display: flex; gap: 10px; flex-wrap: wrap; padding-top: 14px; border-top: 1px solid var(--border-subtle); align-items: center;">
+        <a href="#reports" class="btn btn-secondary btn-sm">
+          📊 Intelligence Reports
+        </a>
+        <a href="#history" class="btn btn-secondary btn-sm">
+          📜 Scan History
+        </a>
         <button class="btn btn-secondary btn-sm" onclick="window.print()">
           🖨️ Export PDF / Print
         </button>
         <button class="btn btn-secondary btn-sm" onclick="window.copyScanShareLink('${data.id}')">
-          🔗 Copy Share Link
+          🔗 Copy Link
         </button>
         <button class="btn btn-secondary btn-sm" onclick="window.openFeedbackModal('${data.id}')">
           Flag Misclassification
         </button>
-        <button class="btn btn-outline btn-sm" onclick="window.clearScanner()">
+        <button class="btn btn-primary btn-sm" onclick="window.clearScanner()">
           + Scan Another URL
         </button>
       </div>

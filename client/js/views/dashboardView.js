@@ -31,6 +31,55 @@ function renderDashboardView() {
       </p>
     </div>
 
+    <!-- Navigation Workflow Map Hub (User Flow Routing) -->
+    <div class="cyber-card" style="margin-bottom: 24px; padding: 20px; background: linear-gradient(135deg, rgba(0, 242, 254, 0.04), rgba(15, 23, 42, 0.6)); border-color: var(--border-cyber);">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
+        <div style="font-size: 0.85rem; font-weight: 700; color: var(--cyan-primary); text-transform: uppercase; letter-spacing: 0.08em; display: flex; align-items: center; gap: 6px;">
+          <span>🧭</span> SOC Workflow Navigation Map
+        </div>
+        <span style="font-size: 0.78rem; color: var(--text-muted);">
+          Core Functional Modules
+        </span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
+        <a href="#scanner" class="btn btn-secondary" style="justify-content: flex-start; padding: 12px 14px; text-decoration: none; border-color: rgba(0, 242, 254, 0.3);">
+          <span style="font-size: 1.2rem;">🛡️</span>
+          <div style="text-align: left;">
+            <div style="font-weight: 600; color: var(--text-primary); font-size: 0.9rem;">URL Scanner</div>
+            <div style="font-size: 0.72rem; color: var(--text-muted);">Real-Time ML Inspection</div>
+          </div>
+        </a>
+        <a href="#history" class="btn btn-secondary" style="justify-content: flex-start; padding: 12px 14px; text-decoration: none;">
+          <span style="font-size: 1.2rem;">📜</span>
+          <div style="text-align: left;">
+            <div style="font-weight: 600; color: var(--text-primary); font-size: 0.9rem;">Scan History</div>
+            <div style="font-size: 0.72rem; color: var(--text-muted);">Forensic Logs & Filters</div>
+          </div>
+        </a>
+        <a href="#reports" class="btn btn-secondary" style="justify-content: flex-start; padding: 12px 14px; text-decoration: none;">
+          <span style="font-size: 1.2rem;">📊</span>
+          <div style="text-align: left;">
+            <div style="font-weight: 600; color: var(--text-primary); font-size: 0.9rem;">Reports</div>
+            <div style="font-size: 0.72rem; color: var(--text-muted);">Executive Threat Briefs</div>
+          </div>
+        </a>
+        <a href="#profile" class="btn btn-secondary" style="justify-content: flex-start; padding: 12px 14px; text-decoration: none;">
+          <span style="font-size: 1.2rem;">👤</span>
+          <div style="text-align: left;">
+            <div style="font-weight: 600; color: var(--text-primary); font-size: 0.9rem;">Profile</div>
+            <div style="font-size: 0.72rem; color: var(--text-muted);">Analyst Keys & Credentials</div>
+          </div>
+        </a>
+        <a href="#settings" class="btn btn-secondary" style="justify-content: flex-start; padding: 12px 14px; text-decoration: none;">
+          <span style="font-size: 1.2rem;">⚙️</span>
+          <div style="text-align: left;">
+            <div style="font-weight: 600; color: var(--text-primary); font-size: 0.9rem;">Settings</div>
+            <div style="font-size: 0.72rem; color: var(--text-muted);">Thresholds & Alerts</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
     <!-- HUD Real-Time Metrics -->
     <div class="hud-grid" id="dashboard-hud-container">
       <div class="hud-card">

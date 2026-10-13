@@ -13,23 +13,11 @@ function isValidEmail(email) {
 
 function validatePasswordStrength(password) {
   if (!password || typeof password !== 'string') {
-    return { valid: false, message: 'Password is required' };
+    return { valid: false, message: 'Password is required.' };
   }
-  if (password.length < 8) {
-    return { valid: false, message: 'Password must be at least 8 characters long' };
+  if (password.length < 6) {
+    return { valid: false, message: 'Password must be at least 6 characters long.' };
   }
-  const hasUpper = /[A-Z]/.test(password);
-  const hasLower = /[a-z]/.test(password);
-  const hasNumber = /[0-9]/.test(password);
-  const hasSpecial = /[^A-Za-z0-9]/.test(password);
-
-  if (!hasUpper || !hasLower || !hasNumber) {
-    return {
-      valid: false,
-      message: 'Password must include at least one uppercase letter, one lowercase letter, and one number.'
-    };
-  }
-
   return { valid: true };
 }
 

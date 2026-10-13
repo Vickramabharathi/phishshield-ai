@@ -1,6 +1,73 @@
 {
   "users": [
     {
+      "name": "Simats Analyst",
+      "email": "192465069.simats@saveetha.com",
+      "password": "$2b$10$hEyKxvhvHeHFTZjqwHyTWeKSQSiMLFhyykKb7MMp8u2ZUdHysG0c.",
+      "role": "user",
+      "status": "active",
+      "organization": "Saveetha University",
+      "apiKey": "ps_live_498f85d7b4a731fed28d07ef",
+      "mfaEnabled": false,
+      "lastLogin": "2026-10-13T13:22:10.811Z",
+      "id": "use-1791897718681-530",
+      "createdAt": "2026-10-13T13:21:58.681Z",
+      "updatedAt": "2026-10-13T13:22:10.811Z"
+    },
+    {
+      "name": "Alex Carter",
+      "email": "alex.carter.999@secops.io",
+      "password": "$2b$10$S6tqH1b3xEi.hfEoP5THIOIBwawHQIE5.wjWRhEq2xuAxuseI7K9W",
+      "role": "user",
+      "status": "active",
+      "organization": "Cyber Defense Lab",
+      "apiKey": "ps_live_abd10fb4a115546fdb568049",
+      "mfaEnabled": false,
+      "lastLogin": "2026-10-13T12:32:51.732Z",
+      "id": "use-1791894771732-947",
+      "createdAt": "2026-10-13T12:32:51.732Z"
+    },
+    {
+      "name": "Test User",
+      "email": "test@example.com",
+      "password": "$2b$10$6MXy4xHH4JHFRqyJdbgZV.ieAJYDUuhXlAAFlMEeXInj5s/noQlqm",
+      "role": "user",
+      "status": "active",
+      "organization": "TestOrg",
+      "apiKey": "ps_live_dcfc0ccd8be13955758f1207",
+      "mfaEnabled": false,
+      "lastLogin": "2026-10-13T11:37:21.269Z",
+      "id": "use-1791891415008-135",
+      "createdAt": "2026-10-13T11:36:55.008Z",
+      "updatedAt": "2026-10-13T11:37:21.269Z"
+    },
+    {
+      "name": "Test User",
+      "email": "testuser123@example.com",
+      "password": "$2b$10$FE9UeoMmn/cpiewGc2tex.rWlIUpdDfh5Dyi2OtLemlrh8cT3TPOu",
+      "role": "user",
+      "status": "active",
+      "organization": "Test Org",
+      "apiKey": "ps_live_b603f01c102e34c1357db888",
+      "mfaEnabled": false,
+      "lastLogin": "2026-10-13T11:02:56.831Z",
+      "id": "use-1791889376832-765",
+      "createdAt": "2026-10-13T11:02:56.832Z"
+    },
+    {
+      "name": "TestUser",
+      "email": "newtest@example.com",
+      "password": "$2b$10$C.vTWFIgeNchyfK1XYMlVuj8maTN3HkSLyUOeY3XCKcstOJbFy5qG",
+      "role": "user",
+      "status": "active",
+      "organization": "Test Corp",
+      "apiKey": "ps_live_7a5f74142b7204f48660326e",
+      "mfaEnabled": false,
+      "lastLogin": "2026-10-12T12:50:22.276Z",
+      "id": "use-1791809422276-987",
+      "createdAt": "2026-10-12T12:50:22.276Z"
+    },
+    {
       "id": "usr-admin-001",
       "name": "Alex Vance",
       "email": "admin@phishshield.ai",
@@ -10,8 +77,9 @@
       "organization": "PhishShield Security Labs",
       "apiKey": "ps_live_a89f3c92e1047db26910a3c2",
       "mfaEnabled": true,
-      "lastLogin": "2026-10-11T17:19:10.406Z",
-      "createdAt": "2026-09-11T17:51:10.407Z"
+      "lastLogin": "2026-10-13T11:04:44.628Z",
+      "createdAt": "2026-09-11T17:51:10.407Z",
+      "updatedAt": "2026-10-13T11:04:44.629Z"
     },
     {
       "id": "usr-analyst-002",
@@ -41,6 +109,80 @@
     }
   ],
   "scans": [
+    {
+      "id": "scn-1791890558881-225",
+      "url": "google.com",
+      "domain": "google.com",
+      "userId": "guest",
+      "userEmail": "guest@anonymous",
+      "prediction": "Legitimate",
+      "confidence": 99.4,
+      "riskLevel": "Safe",
+      "phishingProbability": 0.006,
+      "latencyMs": 8,
+      "reasons": [],
+      "positiveIndicators": [
+        "Globally established authoritative domain with verified reputation",
+        "Valid cryptographic protocol (HTTPS) without credential theft tokens",
+        "Natural lexical entropy indicating legitimate linguistic structure",
+        "Zero homoglyph or punycode spoofing indicators found"
+      ],
+      "recommendations": [
+        "Domain verified as authentic and safe for navigation",
+        "Standard caution: Always verify sender address when clicking links from external emails"
+      ],
+      "features": {
+        "urlLength": 10,
+        "domainLength": 10,
+        "subdomains": 0,
+        "hasIpAddress": false,
+        "hasAtSymbol": false,
+        "hasPunycode": false,
+        "suspiciousKeywords": 0,
+        "shannonEntropyDomain": 2.646,
+        "tldRiskScore": 0.15,
+        "brandImpersonationScore": 0,
+        "impersonatedBrand": null
+      },
+      "createdAt": "2026-10-13T11:22:38.881Z"
+    },
+    {
+      "id": "scn-1791889367751-954",
+      "url": "https://google.com",
+      "domain": "google.com",
+      "userId": "guest",
+      "userEmail": "guest@anonymous",
+      "prediction": "Legitimate",
+      "confidence": 99.4,
+      "riskLevel": "Safe",
+      "phishingProbability": 0.006,
+      "latencyMs": 8,
+      "reasons": [],
+      "positiveIndicators": [
+        "Globally established authoritative domain with verified reputation",
+        "Valid cryptographic protocol (HTTPS) without credential theft tokens",
+        "Natural lexical entropy indicating legitimate linguistic structure",
+        "Zero homoglyph or punycode spoofing indicators found"
+      ],
+      "recommendations": [
+        "Domain verified as authentic and safe for navigation",
+        "Standard caution: Always verify sender address when clicking links from external emails"
+      ],
+      "features": {
+        "urlLength": 18,
+        "domainLength": 10,
+        "subdomains": 0,
+        "hasIpAddress": false,
+        "hasAtSymbol": false,
+        "hasPunycode": false,
+        "suspiciousKeywords": 0,
+        "shannonEntropyDomain": 2.646,
+        "tldRiskScore": 0.15,
+        "brandImpersonationScore": 0,
+        "impersonatedBrand": null
+      },
+      "createdAt": "2026-10-13T11:02:47.751Z"
+    },
     {
       "id": "scn-9021-001",
       "url": "http://pаypal-security-update.com/login?token=89432f81",
@@ -416,6 +558,149 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "aud-1791897730813-930",
+      "timestamp": "2026-10-13T13:22:10.813Z",
+      "userId": "use-1791897718681-530",
+      "userEmail": "192465069.simats@saveetha.com",
+      "action": "USER_LOGIN",
+      "details": "Successful login via web portal (Role: user)",
+      "ip": "::1",
+      "status": "SUCCESS",
+      "createdAt": "2026-10-13T13:22:10.815Z"
+    },
+    {
+      "id": "aud-1791897718686-432",
+      "timestamp": "2026-10-13T13:21:58.686Z",
+      "userId": "use-1791897718681-530",
+      "userEmail": "192465069.simats@saveetha.com",
+      "action": "USER_REGISTERED",
+      "details": "New account created with role \"user\"",
+      "ip": "::1",
+      "status": "SUCCESS",
+      "createdAt": "2026-10-13T13:21:58.687Z"
+    },
+    {
+      "id": "aud-1791897704147-228",
+      "timestamp": "2026-10-13T13:21:44.147Z",
+      "userId": "anonymous",
+      "userEmail": "192465069.simats@saveetha.com",
+      "action": "FAILED_LOGIN_ATTEMPT",
+      "details": "Invalid email address provided",
+      "ip": "::1",
+      "status": "FAILURE",
+      "createdAt": "2026-10-13T13:21:44.148Z"
+    },
+    {
+      "id": "aud-1791897435079-517",
+      "timestamp": "2026-10-13T13:17:15.079Z",
+      "userId": "anonymous",
+      "userEmail": "192465069.simats@saveetha.com",
+      "action": "FAILED_LOGIN_ATTEMPT",
+      "details": "Invalid email address provided",
+      "ip": "::1",
+      "status": "FAILURE",
+      "createdAt": "2026-10-13T13:17:15.079Z"
+    },
+    {
+      "id": "aud-1791896634074-753",
+      "timestamp": "2026-10-13T13:03:54.074Z",
+      "userId": "anonymous",
+      "userEmail": "192465069.simats@saveetha.com",
+      "action": "FAILED_LOGIN_ATTEMPT",
+      "details": "Invalid email address provided",
+      "ip": "::1",
+      "status": "FAILURE",
+      "createdAt": "2026-10-13T13:03:54.074Z"
+    },
+    {
+      "id": "aud-1791894771739-212",
+      "timestamp": "2026-10-13T12:32:51.739Z",
+      "userId": "use-1791894771732-947",
+      "userEmail": "alex.carter.999@secops.io",
+      "action": "USER_REGISTERED",
+      "details": "New account created with role \"user\"",
+      "ip": "::1",
+      "status": "SUCCESS",
+      "createdAt": "2026-10-13T12:32:51.739Z"
+    },
+    {
+      "id": "aud-1791891441274-233",
+      "timestamp": "2026-10-13T11:37:21.274Z",
+      "userId": "use-1791891415008-135",
+      "userEmail": "test@example.com",
+      "action": "USER_LOGIN",
+      "details": "Successful login via web portal (Role: user)",
+      "ip": "::1",
+      "status": "SUCCESS",
+      "createdAt": "2026-10-13T11:37:21.274Z"
+    },
+    {
+      "id": "aud-1791891415014-327",
+      "timestamp": "2026-10-13T11:36:55.014Z",
+      "userId": "use-1791891415008-135",
+      "userEmail": "test@example.com",
+      "action": "USER_REGISTERED",
+      "details": "New account created with role \"user\"",
+      "ip": "::1",
+      "status": "SUCCESS",
+      "createdAt": "2026-10-13T11:36:55.014Z"
+    },
+    {
+      "id": "aud-1791890558887-685",
+      "timestamp": "2026-10-13T11:22:38.887Z",
+      "userId": "guest",
+      "userEmail": "guest@anonymous",
+      "action": "URL_SCAN_EXECUTED",
+      "details": "Analyzed google.com -> Legitimate (Safe, 99.4%)",
+      "ip": "::1",
+      "status": "SUCCESS",
+      "createdAt": "2026-10-13T11:22:38.887Z"
+    },
+    {
+      "id": "aud-1791889484632-138",
+      "timestamp": "2026-10-13T11:04:44.632Z",
+      "userId": "usr-admin-001",
+      "userEmail": "admin@phishshield.ai",
+      "action": "USER_LOGIN",
+      "details": "Successful login via web portal (Role: admin)",
+      "ip": "::1",
+      "status": "SUCCESS",
+      "createdAt": "2026-10-13T11:04:44.632Z"
+    },
+    {
+      "id": "aud-1791889376838-136",
+      "timestamp": "2026-10-13T11:02:56.838Z",
+      "userId": "use-1791889376832-765",
+      "userEmail": "testuser123@example.com",
+      "action": "USER_REGISTERED",
+      "details": "New account created with role \"user\"",
+      "ip": "::1",
+      "status": "SUCCESS",
+      "createdAt": "2026-10-13T11:02:56.838Z"
+    },
+    {
+      "id": "aud-1791889367754-248",
+      "timestamp": "2026-10-13T11:02:47.754Z",
+      "userId": "guest",
+      "userEmail": "guest@anonymous",
+      "action": "URL_SCAN_EXECUTED",
+      "details": "Analyzed google.com -> Legitimate (Safe, 99.4%)",
+      "ip": "::1",
+      "status": "SUCCESS",
+      "createdAt": "2026-10-13T11:02:47.754Z"
+    },
+    {
+      "id": "aud-1791809422282-919",
+      "timestamp": "2026-10-12T12:50:22.282Z",
+      "userId": "use-1791809422276-987",
+      "userEmail": "newtest@example.com",
+      "action": "USER_REGISTERED",
+      "details": "New account created with role \"user\"",
+      "ip": "::1",
+      "status": "SUCCESS",
+      "createdAt": "2026-10-12T12:50:22.282Z"
+    },
     {
       "id": "aud-001",
       "timestamp": "2026-10-11T17:39:10.407Z",

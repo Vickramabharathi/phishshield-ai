@@ -38,6 +38,9 @@ class AppRouter {
   }
 
   handleRoute() {
+    if (window.location.search && window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.hash);
+    }
     let hash = window.location.hash || '#home';
     // Strip query parameters for routing if present
     const baseHash = hash.split('?')[0];

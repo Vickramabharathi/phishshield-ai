@@ -44,12 +44,13 @@ function toSupabase(collection, item) {
         updated_at: item.updatedAt || new Date().toISOString()
       };
 
-    case 'scans':
+    case 'scans': {
+      const validUserId = (item.userId && item.userId !== 'guest' && !item.userId.startsWith('guest') && item.userId !== 'anonymous') ? item.userId : null;
       return {
         id: item.id,
         url: item.url,
         domain: item.domain || null,
-        user_id: item.userId || null,
+        user_id: validUserId,
         user_email: item.userEmail || null,
         prediction: item.prediction,
         confidence: item.confidence !== undefined ? Number(item.confidence) : 50.0,
@@ -62,22 +63,26 @@ function toSupabase(collection, item) {
         features: item.features || {},
         created_at: item.createdAt || new Date().toISOString()
       };
+    }
 
-    case 'feedback':
+    case 'feedback': {
+      const validUserId = (item.userId && item.userId !== 'guest' && !item.userId.startsWith('guest') && item.userId !== 'anonymous') ? item.userId : null;
       return {
         id: item.id,
         scan_id: item.scanId || null,
-        user_id: item.userId || null,
+        user_id: validUserId,
         user_email: item.userEmail || null,
         reported_as: item.reportedAs || item.userVerdict || 'Phishing',
         notes: item.notes || item.comments || '',
         created_at: item.createdAt || item.submittedAt || new Date().toISOString()
       };
+    }
 
-    case 'audit_logs':
+    case 'audit_logs': {
+      const validUserId = (item.userId && item.userId !== 'guest' && !item.userId.startsWith('guest') && item.userId !== 'anonymous') ? item.userId : null;
       return {
         id: item.id,
-        user_id: item.userId || null,
+        user_id: validUserId,
         user_email: item.userEmail || null,
         action: item.action,
         details: item.details || '',
@@ -85,6 +90,7 @@ function toSupabase(collection, item) {
         status: item.status || 'SUCCESS',
         timestamp: item.timestamp || new Date().toISOString()
       };
+    }
 
     case 'incident_reports':
       return {

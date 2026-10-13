@@ -114,7 +114,7 @@ router.post('/login', authLimiter, (req, res) => {
         ip: req.ip || req.connection.remoteAddress,
         status: 'FAILURE'
       });
-      return res.status(401).json({ success: false, message: 'Invalid email or password.' });
+      return res.status(401).json({ success: false, message: 'No account found with this email. Please click "Register Now" below to create an account.' });
     }
 
     if (user.status === 'suspended') {
@@ -131,7 +131,7 @@ router.post('/login', authLimiter, (req, res) => {
         ip: req.ip || req.connection.remoteAddress,
         status: 'FAILURE'
       });
-      return res.status(401).json({ success: false, message: 'Invalid email or password.' });
+      return res.status(401).json({ success: false, message: 'Incorrect password. Please verify your password and try again.' });
     }
 
     // Update last login

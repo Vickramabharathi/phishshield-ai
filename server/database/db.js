@@ -65,7 +65,23 @@ class DatabaseManager {
 
   // --- Collection Helpers ---
 
+  reloadFromDisk() {
+    try {
+      if (fs.existsSync(this.dbPath)) {
+        const stats = fs.statSync(this.dbPath);
+        if (!this.lastMtime || stats.mtimeMs > this.lastMtime) {
+          this.lastMtime = stats.mtimeMs;
+          const raw = fs.readFileSync(this.dbPath, 'utf8');
+          this.cache = JSON.parse(raw);
+        }
+      }
+    } catch (e) {
+      // Preserve existing in-memory cache on read error
+    }
+  }
+
   get(collection) {
+    this.reloadFromDisk();
     if (!this.cache[collection]) {
       this.cache[collection] = [];
     }
