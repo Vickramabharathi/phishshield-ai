@@ -1,0 +1,30 @@
+{
+  "name": "phishshield-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "test": "node tests/server_smoke.test.js && node tests/ml_features.test.js && node tests/auth_validation.test.js && node tests/supabase_smoke.test.js",
+    "test:supabase": "node tests/supabase_smoke.test.js",
+    "db:migrate:supabase": "node server/database/migrateToSupabase.js",
+    "db:test:supabase": "node server/database/migrateToSupabase.js --dry-run",
+    "db:pull:supabase": "node server/database/migrateToSupabase.js --pull",
+    "ml:train": "python ml_pipeline/train_model.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.3",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3"
+  }
+}

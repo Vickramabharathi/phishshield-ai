@@ -1,0 +1,110 @@
+/* ==========================================================================
+   PhishShield AI - Design System & Tokens
+   ========================================================================== */
+
+:root {
+  /* Cybersecurity Cyber Dark Theme (Default) */
+  --bg-primary: #06090e;
+  --bg-secondary: #0a0f1d;
+  --bg-tertiary: #0f172a;
+  --bg-card: rgba(15, 23, 42, 0.75);
+  --bg-card-hover: rgba(22, 33, 62, 0.85);
+  --bg-elevated: #162038;
+  --bg-input: rgba(10, 15, 29, 0.8);
+
+  /* Borders & Glassmorphic Effects */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-cyber: rgba(0, 242, 254, 0.25);
+  --border-hover: rgba(0, 242, 254, 0.5);
+  --border-glow: 0 0 15px rgba(0, 242, 254, 0.2);
+
+  /* Primary Cyber Accents */
+  --cyan-primary: #00f2fe;
+  --cyan-hover: #38f9d7;
+  --cyan-glow: rgba(0, 242, 254, 0.4);
+  --blue-electric: #4facfe;
+  --purple-accent: #8b5cf6;
+  --purple-glow: rgba(139, 92, 246, 0.3);
+
+  /* Threat Status & Risk Levels */
+  --risk-safe: #10b981;
+  --risk-safe-bg: rgba(16, 185, 129, 0.12);
+  --risk-safe-border: rgba(16, 185, 129, 0.35);
+
+  --risk-low: #06b6d4;
+  --risk-low-bg: rgba(6, 182, 212, 0.12);
+  --risk-low-border: rgba(6, 182, 212, 0.35);
+
+  --risk-medium: #f59e0b;
+  --risk-medium-bg: rgba(245, 158, 11, 0.12);
+  --risk-medium-border: rgba(245, 158, 11, 0.35);
+
+  --risk-high: #f97316;
+  --risk-high-bg: rgba(249, 115, 22, 0.12);
+  --risk-high-border: rgba(249, 115, 22, 0.35);
+
+  --risk-critical: #ef4444;
+  --risk-critical-bg: rgba(239, 68, 68, 0.15);
+  --risk-critical-border: rgba(239, 68, 68, 0.45);
+  --risk-critical-glow: 0 0 20px rgba(239, 68, 68, 0.3);
+
+  /* Typography Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-accent: #00f2fe;
+
+  /* Fonts */
+  --font-sans: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --shadow-cyber: 0 0 25px rgba(0, 242, 254, 0.15);
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-slow: 0.4s ease;
+}
+
+/* Light Theme Variables */
+[data-theme='light'] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f1f5f9;
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --bg-card-hover: #ffffff;
+  --bg-elevated: #e2e8f0;
+  --bg-input: #ffffff;
+
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-cyber: rgba(2, 132, 199, 0.3);
+  --border-hover: rgba(2, 132, 199, 0.6);
+  --border-glow: 0 0 15px rgba(2, 132, 199, 0.15);
+
+  --cyan-primary: #0284c7;
+  --cyan-hover: #0369a1;
+  --cyan-glow: rgba(2, 132, 199, 0.2);
+  --blue-electric: #2563eb;
+  --purple-accent: #7c3aed;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-accent: #0284c7;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.1);
+  --shadow-cyber: 0 0 20px rgba(2, 132, 199, 0.1);
+}
